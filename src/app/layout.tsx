@@ -95,6 +95,12 @@ export default function RootLayout({
       <body
         className={`${shippori.variable} ${cormorant.variable} ${outfit.variable} font-sans antialiased`}
       >
+        <style
+          id="critical-css"
+          dangerouslySetInnerHTML={{
+            __html: `:root{--sumi:#121212;--vermillion:#c8102e;--rice:#f4efe6;--hinoki:#c4a574;--wave:#1e3a5f;--uni:#d4a017;--ink:#0a0a0a}html,body{background:#121212;color:#f4efe6;margin:0;min-height:100%}a{color:inherit}`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
